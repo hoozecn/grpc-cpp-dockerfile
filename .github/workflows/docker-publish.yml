@@ -7,7 +7,7 @@ on:
       - test
 
 env:
-  IMAGE_NAME: grpc-cpp:testing
+  IMAGE_NAME: grpc-cpp
 
 jobs:
   
