@@ -8,4 +8,4 @@ run cd grpc && git submodule update --init --depth=1
 run cd /tmp && apt install -y curl && curl -O https://www.openssl.org/source/openssl-1.1.1i.tar.gz && \
     tar xzf openssl-1.1.1i.tar.gz && cd openssl-1.1.1i && \
     ./config && make -j16 && make install_sw && rm -rf /tmp/openssl-*
-run cd grpc && cmake . && make -j16 install && rm -rf /grpc
+run cd grpc && cmake . -DBUILD_SHARED_LIBS=ON && make -j16 install
